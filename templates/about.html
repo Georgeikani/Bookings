@@ -1,0 +1,26 @@
+{{template "base" .}}
+
+{{define "content"}}
+<div>
+    <h2>Welcome to the about page</h2>
+    <p>you are all Welcome to the group of developers.</p>
+
+    <h4>Progressive youth</h4>
+
+
+    <p>let it make sense, am pulling this from the handlers.go handle. {{index .StringMap "test"}}</p>
+
+    <p>Good morning world!</p>
+
+    <p>
+        {{if ne (index .StringMap "remote_ip") ""}}
+        Your remote IP address is {{index .StringMap "remote_ip"}}
+
+        {{else}}
+        I dont know your ip address yet, visit the <a href="/">Home</a> so i can set it.
+
+        {{end}}
+    </p>
+
+</div>
+{{end}}
