@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 
 	"github.com/georgeikani/Bookings/pkg/models"
-	"github.com/georgeikani/Bookings/config"
+	"github.com/georgeikani/Bookings/pkg/config"
 )
 
 /*
