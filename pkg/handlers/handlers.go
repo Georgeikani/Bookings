@@ -5,7 +5,7 @@ import (
 
 	"github.com/georgeikani/Bookings/pkg/models"
 	"github.com/georgeikani/Bookings/pkg/config"
-	"github.com/georgeikani/Bookings/pkg/render"
+	"github.com/georgeikani/Bookings/render"
 )
 
 var Repo *Repository

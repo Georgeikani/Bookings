@@ -9,7 +9,7 @@ import (
 	"github.com/alexedwards/scs/v2"
 	"github.com/georgeikani/Bookings/pkg/config"
 	"github.com/georgeikani/Bookings/pkg/handlers"
-	"github.com/georgeikani/Bookings/pkg/render"
+	"github.com/georgeikani/Bookings/render"
 )
 
 const portNumber = ":8080"
