@@ -1,0 +1,14 @@
+
+
+.my-footer {
+    background-color: #163b65;
+    margin-top: 1.5em;
+    padding: 1em;
+    color: white;
+    height: 5em;
+    font-size: 15pt;
+}
+
+.notie-container {
+    box-shadow: none;
+}
