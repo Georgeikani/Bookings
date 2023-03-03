@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/georgeikani/Bookings/pkg/config"
-	"github.com/georgeikani/Bookings/pkg/handlers"
+	"github.com/georgeikani/Bookings/internal/config"
+	"github.com/georgeikani/Bookings/internal/handlers"
 	"github.com/georgeikani/Bookings/render"
 )
 

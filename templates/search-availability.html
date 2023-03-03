@@ -1,0 +1,94 @@
+{{template "base" .}}
+
+{{define "content"}}
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-7">
+            <h1 class="mt-4">Search for Available Rooms</h1>
+
+            <form action="reservation.html" method="get" novalidate class="needs-validation">
+
+                <!--                     
+                <div class="row">
+                    <div class="col">
+
+                        <div class="mb-3">
+                            <label for="start_date">Start-Date</label>
+                            <input required type="date" class="form-control" id="start_date" name="start_date"
+                                aria-describedby="startDateHelp">
+                            <email id="startDateHelp" class="form-text">Enter your starting date in the form of
+                                YYYY-MM-DD</email>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="start_date">Checkout-Date</label>
+                            <input required type="date" class="form-control" id="start_date" name="checkout_date"
+                                aria-describedby="checkoutDateHelp">
+                            <email id="checkoutDateHelp" class="form-text">Enter your checkingOut date in the form
+                                of
+                                YYYY-MM-DD</email>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+
+                        <div class="row" id="reservation-date">
+
+                            <div class="col">
+                                <input type="text" name="start" class="form-control" required
+                                    placeholder="Check-In Date">
+                            </div>
+
+
+                            <div class="col">
+
+                                <input type="text" name="end" class="form-control" required
+                                    placeholder="Check-Out Date">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+
+
+        </div>
+    </div>
+
+</div>
+
+{{end}}
+
+{{define "js"}}
+
+<script>
+
+const elem = document.getElementById('reservation-date');
+const rangepicker = new DateRangePicker(elem, {
+    format: "yyyy-mm-dd",
+});
+</script>
+
+{{end}}
+
+/ -->

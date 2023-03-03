@@ -1,7 +1,15 @@
 {{template "base" .}}
 
-{{define "content"}}
+
+{{define "content" }}
+
 <div class="container">
+
+    <div class="row">
+        <div class="col">
+            <img src="/static/room-images/marjors-suite.png" class="image-fluid img-thumbnail mx-auto d-block general-image" alt="major">
+        </div>
+    </div>
 
     <div class="row">
         <div class="col">
@@ -27,10 +35,51 @@
         <div class="col text-center">
 
 
-            <a href="/reservation" class="btn btn-success">Make Reservation Now</a>
+            <a id="check-availability-button" href="#!" class="btn btn-success">Make Reservation Now</a>
         </div>
     </div>
 
 </div>
+
+
+{{end}}
+
+{{define "js"}}
+
+
+<script>
+    
+
+    document.getElementById("check-availability-button").addEventListener("click", function () {
+
+        let tmpl = `
+
+
+            <form id="check-availabilty-form" action = "" method = "post" novalidate class="needs-validation" >
+                <div class="row">
+                    <div class="col" id="reservation-date">
+                        <div class="row" id="reservation-date-modal">
+                            <div class="col">
+                                <input type="text" disabled required class="form-control" name="start" id="start" placeholder="Arrival">
+                            </div>
+
+                            <div class="col">
+                                <input type="text" disabled required class="form-control" name="end" id="end" placeholder="Departure">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+             </form >
+            `
+
+        attention.custom({ msg: tmpl, title: "Choose Checking In and Checking Out Date" });
+
+
+    })
+</script>
+
+
 
 {{end}}
